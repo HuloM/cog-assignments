@@ -43,7 +43,7 @@ public class TodoManagerApp {
 
         int choice = sc.nextInt();
 
-        while (choice < 1 || choice > 4) {
+        while (choice < 0 || choice > 4) {
             System.out.println("That is not a valid option, please choose from 0-4");
             choice = sc.nextInt();
         }
