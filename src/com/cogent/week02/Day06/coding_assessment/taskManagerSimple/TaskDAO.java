@@ -28,22 +28,22 @@ public class TaskDAO {
     }
 
     void printReapeated() {
-        if (TaskManagerApp.task1.getTaskName().equals(TaskManagerApp.task2.getTaskName()))
-            System.out.println("task 1 and task 2 are repeating:\n " +
+        if (TaskManagerApp.task1.getTaskName().equals(TaskManagerApp.task2.getTaskName()) && TaskManagerApp.task2.getTaskName().equals(TaskManagerApp.task3.getTaskName()))
+            System.out.println("all tasks are are repeating:\n" +
+                    TaskManagerApp.task1.toString() + "\n" +
+                    TaskManagerApp.task2.toString() + "\n" +
+                    TaskManagerApp.task3.toString());
+        else if (TaskManagerApp.task1.getTaskName().equals(TaskManagerApp.task2.getTaskName()))
+            System.out.println("task 1 and task 2 are repeating:\n" +
                     TaskManagerApp.task1.toString() + "\n " +
                     TaskManagerApp.task2.toString());
         else if (TaskManagerApp.task1.getTaskName().equals(TaskManagerApp.task3.getTaskName()))
-            System.out.println("task 1 and task 3 are repeating:\n " +
-                    TaskManagerApp.task1.toString() + "\n " +
+            System.out.println("task 1 and task 3 are repeating:\n" +
+                    TaskManagerApp.task1.toString() + "\n" +
                     TaskManagerApp.task3.toString());
         else if (TaskManagerApp.task2.getTaskName().equals(TaskManagerApp.task3.getTaskName()))
-            System.out.println("task 2 and task 3 are repeating:\n " +
-                    TaskManagerApp.task2.toString() + "\n " +
-                    TaskManagerApp.task3.toString());
-        else if (TaskManagerApp.task1.getTaskName().equals(TaskManagerApp.task2.getTaskName()) && TaskManagerApp.task2.getTaskName().equals(TaskManagerApp.task3.getTaskName()))
-            System.out.println("all tasks are are repeating:\n " +
-                    TaskManagerApp.task1.toString() + "\n" +
-                    TaskManagerApp.task2.toString() + "\n " +
+            System.out.println("task 2 and task 3 are repeating:\n" +
+                    TaskManagerApp.task2.toString() + "\n" +
                     TaskManagerApp.task3.toString());
     }
 }
