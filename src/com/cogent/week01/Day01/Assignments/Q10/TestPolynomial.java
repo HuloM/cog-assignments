@@ -22,5 +22,8 @@ public class TestPolynomial {
         poly2.setTerm(1,3);
         poly2.setTerm(1,4);
         poly2.setTerm(1,5);
+
+        //too many terms
+//        poly2.setTerm(1, 6);
     }
 }
