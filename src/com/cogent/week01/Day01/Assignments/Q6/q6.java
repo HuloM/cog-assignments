@@ -1,4 +1,4 @@
-package com.cogent.week01.Day02;
+package com.cogent.week01.Day01.Assignments.Q6;
 
 import java.util.Scanner;
 
