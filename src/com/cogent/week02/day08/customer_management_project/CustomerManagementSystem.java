@@ -1,7 +1,6 @@
 package com.cogent.week02.day08.customer_management_project;
 
 import com.cogent.week02.day08.customer_management_project.controller.CustomerController;
-import com.cogent.week02.day08.customer_management_project.model.Customer;
 
 import java.util.Scanner;
 

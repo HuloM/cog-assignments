@@ -4,6 +4,10 @@ import com.cogent.week02.day08.customer_management_project.exception.CustomerIdN
 import com.cogent.week02.day08.customer_management_project.exception.NoCustomersExistException;
 import com.cogent.week02.day08.customer_management_project.model.Customer;
 
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Scanner;
@@ -32,7 +36,7 @@ public class CustomerDAO implements ICustomerDAO {
         isNoCustomerExist();
         System.out.println("Here are the following customers present: ");
         for (Customer customer : customers) {
-            System.out.println(customer.toString());
+            if (customer != null) System.out.println(customer);
         }
     }
 
@@ -49,7 +53,7 @@ public class CustomerDAO implements ICustomerDAO {
 
     @Override
     public void delete(int customerId) throws CustomerIdNotFoundException, NoCustomersExistException {
-        customers[findbyId(customerId)] = null;
+        customers[findbyId(customerId)] = new Customer(-1, " ", " ", Date.from(LocalDateTime.now().toInstant((ZoneOffset) ZoneId.systemDefault())));
         count--;
 
         System.out.println("Customer Successfully Deleted");
@@ -65,9 +69,11 @@ public class CustomerDAO implements ICustomerDAO {
         isNoCustomerExist();
         int youngest = 0;
         for (int i = 0; i < customers.length; i++) {
-            if(customers[youngest].getcDob().after(customers[i].getcDob()))
-                youngest = i;
+            if(customers[youngest] != null && customers[i] != null)
+                if(customers[youngest].getcDob().after(customers[i].getcDob()))
+                    youngest = i;
         }
+
         System.out.println("Youngest Customer: " + customers[youngest].toString());
     }
 

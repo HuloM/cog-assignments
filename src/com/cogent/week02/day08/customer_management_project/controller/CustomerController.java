@@ -24,6 +24,7 @@ public class CustomerController {
                 case 4 -> this.service.remove(getCustomerId());
                 case 5 -> this.service.findYoungestCustomer();
                 case 6 -> this.service.findCustomerById(getCustomerId());
+                case 7 -> { break; }
                 default -> throw new BadMenuChoiceException();
             }
 
