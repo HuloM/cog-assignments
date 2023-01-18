@@ -9,7 +9,6 @@ public class static_initializer {
         B b = new B();
         A a = new A();
         System.out.println("end");
-
     }
 }
 
