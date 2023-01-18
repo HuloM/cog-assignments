@@ -1,4 +1,4 @@
-package com.cogent.week02.Day07;
+package com.cogent.week02.day07;
 
 public class static_initializer {
     static {

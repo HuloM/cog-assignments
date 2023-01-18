@@ -1,4 +1,4 @@
-package com.cogent.week02.Day07.AggregationComposition;
+package com.cogent.week02.day07.AggregationComposition;
 
 public class Car {
     // engine is a representation of composition as the car needs the engine to run

@@ -1,4 +1,4 @@
-package com.cogent.week02.Day07.abstract_classes;
+package com.cogent.week02.day07.abstract_classes;
 
 public class abstract_classes {
     public static void main(String[] args) {

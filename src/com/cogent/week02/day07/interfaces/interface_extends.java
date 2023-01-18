@@ -1,4 +1,4 @@
-package com.cogent.week02.Day07.interfaces;
+package com.cogent.week02.day07.interfaces;
 
 public class interface_extends {
 

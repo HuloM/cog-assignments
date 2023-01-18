@@ -1,4 +1,4 @@
-package com.cogent.week02.Day07.UpDownCasting;
+package com.cogent.week02.day07.UpDownCasting;
 
 public class Dog extends Animal{
     public void bark() {
