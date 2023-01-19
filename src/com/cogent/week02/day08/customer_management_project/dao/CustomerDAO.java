@@ -36,7 +36,7 @@ public class CustomerDAO implements ICustomerDAO {
         isNoCustomerExist();
         System.out.println("Here are the following customers present: ");
         for (Customer customer : customers) {
-            if (customer != null) System.out.println(customer);
+            if (customer.getcId() >= 0) System.out.println(customer);
         }
     }
 
@@ -53,7 +53,7 @@ public class CustomerDAO implements ICustomerDAO {
 
     @Override
     public void delete(int customerId) throws CustomerIdNotFoundException, NoCustomersExistException {
-        customers[findbyId(customerId)] = new Customer(-1, " ", " ", Date.from(LocalDateTime.now().toInstant((ZoneOffset) ZoneId.systemDefault())));
+        customers[findbyId(customerId)] = new Customer(-1, " ", " ", new Date(9999,0,1));
         count--;
 
         System.out.println("Customer Successfully Deleted");
@@ -94,7 +94,7 @@ public class CustomerDAO implements ICustomerDAO {
 
     private Date getDob(String dob) {
         String[] date = dob.split("/");
-        return new Date(Integer.parseInt(date[2]) - 1900,
+        return new Date(Integer.parseInt(date[2]),
         Integer.parseInt(date[1]),
         Integer.parseInt(date[0]));
     }

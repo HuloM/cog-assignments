@@ -55,7 +55,7 @@ public class Customer {
                 "cId= " + cId +
                 ", cName= '" + cName + '\'' +
                 ", cEmail= '" + cEmail + '\'' +
-                ", cDob= " + cDob +
+                ", cDob= " +  cDob.getDate() + "/" + cDob.getMonth() + "/" + cDob.getYear() +
                 " }";
     }
 }
