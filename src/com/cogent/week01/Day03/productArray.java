@@ -1,4 +1,4 @@
-package com.cogent.week01.Day03;
+package com.cogent.week01.day03;
 
 public class productArray {
     public static void main(String[] args) {
