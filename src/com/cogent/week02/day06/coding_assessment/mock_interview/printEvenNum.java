@@ -1,4 +1,4 @@
-package com.cogent.week02.Day06.coding_assessment.mockInterview;
+package com.cogent.week02.day06.coding_assessment.mock_interview;
 
 public class printEvenNum {
     public static void main(String[] args) {

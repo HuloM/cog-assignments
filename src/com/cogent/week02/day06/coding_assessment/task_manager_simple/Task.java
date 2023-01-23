@@ -1,4 +1,4 @@
-package com.cogent.week02.Day06.coding_assessment.taskManagerSimple;
+package com.cogent.week02.day06.coding_assessment.task_manager_simple;
 
 public class Task {
     public int getTaskId() {
