@@ -2,7 +2,7 @@ package com.cogent.week02.day09.io_streams;
 
 import java.io.*;
 
-public class Char_Stream {
+public class CharStreamExample {
 
     public static void main(String[] args) {
         FileReader reader = null;

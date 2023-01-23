@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 /*
 ? reads the input from console to print out a statement
 */
-public class Buffered_Reader {
+public class BufferedReaderExample {
     public static void main(String[] args) {
         BufferedReader buffer = new BufferedReader((new InputStreamReader(System.in)));
 

@@ -5,7 +5,7 @@ import java.util.StringTokenizer;
 /*
 ? use delimiter to separate out a string into individual strings
 */
-public class String_Tokenizer {
+public class StringTokenizerExample {
 
     public static void main(String[] args) {
         String str = "hello,world,this,is,an,application";
