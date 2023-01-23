@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class Class {
-    private ArrayList<Student> students = new ArrayList<>();
+    private final ArrayList<Student> students = new ArrayList<>();
 
     public void setNames() {
         Scanner sc = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class Class {
 
     public void searchName(String name) {
         for (Student student: this.students) {
-            if (student.getName().equals(name)) {
+            if (name.equals(student.getName())) {
                 System.out.println("student found: " + student.getName());
                 return;
             }
@@ -34,7 +34,7 @@ public class Class {
             System.out.println("index out of bounds");
             return;
         }
-        System.out.println("student found: " + this.students.get(index));
+        System.out.println("student found: " + this.students.get(index).getName());
     }
 
     public void printNames() {
@@ -45,7 +45,13 @@ public class Class {
     }
 
     public void removeName(String name) {
-        this.students.remove(new Student(name));
-        System.out.println(name + " has been removed");
+        for (int i = 0; i < this.students.size(); i++) {
+            if(name.equals(this.students.get(i).getName())) {
+                this.students.remove(i);
+                System.out.println(name + " has been removed");
+                return;
+            }
+        }
+        System.out.println(name + " was not found");
     }
 }

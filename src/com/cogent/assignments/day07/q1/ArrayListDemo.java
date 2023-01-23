@@ -10,7 +10,7 @@ public class ArrayListDemo {
 
         classroom.searchName("Jessica");
 
-        classroom.removeName("Jessica");
+        classroom.removeName("Jessicaa");
 
         classroom.searchName(2);
 
