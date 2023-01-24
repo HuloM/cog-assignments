@@ -1,13 +1,13 @@
 package com.cogent.assignments.day07.q3;
 
 import java.util.Iterator;
-import java.util.Set;
+import java.util.SortedSet;
 import java.util.TreeSet;
 
 public class TestTreeSet {
 
     public static void main(String[] args) {
-        TreeSet<String> product = new TreeSet<>();
+        SortedSet<String> product = new TreeSet<>();
 
         product.add("table");
         product.add("chair");
@@ -31,7 +31,5 @@ public class TestTreeSet {
         product.remove("keyboard");
         System.out.println(product);
         System.out.println("size: " + product.size());
-
-
     }
 }
