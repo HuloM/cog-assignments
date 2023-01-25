@@ -8,6 +8,9 @@ public class ThreadDemo {
         Thread thread = new Thread(myThread);
         Thread thread2 = new Thread(myThread2);
 
+        thread.setPriority(Thread.MIN_PRIORITY);
+        thread2.setPriority(Thread.MAX_PRIORITY);
+
         thread.start();
         thread2.start();
     }
