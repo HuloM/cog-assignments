@@ -8,15 +8,14 @@ public class Counter extends Thread {
     }
 
     @Override
-    public void run() {
-        synchronized (storage) {
-            for (int i = 0; i < 100; i++) {
-                storage.num++;
-                try {
-                    Thread.sleep(1000);
-                } catch (InterruptedException e) {
-                    throw new RuntimeException(e);
-                }
+    public synchronized void run() {
+            for (int i = 0; i < 20; i++) {
+                storage.setNum(i);
+                Thread.yield();
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
             }
         }
     }

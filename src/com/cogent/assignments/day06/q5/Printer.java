@@ -8,11 +8,11 @@ public class Printer extends Thread {
     }
 
     @Override
-    public void run() {
-        for (int i = 0; i < 100; i++) {
-            System.out.println(storage.num);
+    public synchronized void run() {
+        for (int i = 0; i < 20; i++) {
+            System.out.println(storage.getNum());
             try {
-                Thread.sleep(1000);
+                Thread.sleep(500);
             } catch (InterruptedException e) {
                 throw new RuntimeException(e);
             }

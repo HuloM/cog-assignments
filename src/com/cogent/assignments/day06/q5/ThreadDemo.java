@@ -8,8 +8,5 @@ public class ThreadDemo {
 
         printer.start();
         counter.start();
-
-        printer.join();
-        counter.join();
     }
 }

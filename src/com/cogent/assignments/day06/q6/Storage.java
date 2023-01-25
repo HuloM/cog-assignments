@@ -1,7 +1,7 @@
 package com.cogent.assignments.day06.q6;
 
 public class Storage {
-    int num = 0;
+    private int num = 0;
 
     public synchronized int getNum() {
         return num;
