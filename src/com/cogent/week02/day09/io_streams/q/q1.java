@@ -1,4 +1,4 @@
-package com.cogent.assignments.day04.q;
+package com.cogent.week02.day09.io_streams.q;
 
 import java.io.*;
 import java.util.StringTokenizer;

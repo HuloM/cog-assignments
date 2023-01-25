@@ -2,7 +2,7 @@ package com.cogent.assignments.day04.q4;
 
 import java.io.*;
 
-public class Q4 {
+public class WriteToThenReadFromFile {
     public static void main(String[] args) {
         BufferedReader buffer = new BufferedReader((new InputStreamReader(System.in)));
         FileReader reader = null;
