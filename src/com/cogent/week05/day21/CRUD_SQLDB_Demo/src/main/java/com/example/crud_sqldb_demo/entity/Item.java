@@ -1,22 +1,24 @@
-package com.example.lombokjpademo.entity;
+package com.example.crud_sqldb_demo.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Employee {
+public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private long employeeId;
-
-    private String employeeName;
-    private String employeeAddress;
-    private String employeePhone;
+    private int id;
+    private String itemName;
+    private Double itemPrice;
+    private int itemQty;
 }
