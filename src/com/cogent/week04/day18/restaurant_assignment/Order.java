@@ -17,7 +17,7 @@ public class Order {
 
     public static int getPrice(int itemNum) {
         return switch (itemNum) {
-            case 1, 9, 4 -> 100;
+            case 1, 4, 9 -> 100;
             case 2, 10 -> 150;
             case 3, 6, 5 -> 50;
             case 7, 8 -> 200;
