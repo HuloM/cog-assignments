@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="submit">
+    <h1>
+        <center>Enrollment Form</center>
+    </h1>
+    <center>
+        <div>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="firstName" placeholder="John">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="lastName" placeholder="Smith">
+        </div>
+        <br>
+        <label for="password">Password</label>
+        <div>
+            <input type="password" id="password" name="password" placeholder="********">
+        </div>
+        <br>
+        <label>Gender</label>
+        <div>
+            <input type="radio" id="genderM" value="male" name="gender">
+            <label for="genderM">male</label>
+            <input type="radio" id="genderF" value="female" name="gender">
+            <label for="genderF">female</label>
+            <input type="radio" id="genderO" value="other" name="gender">
+            <label for="genderO">other</label>
+        </div>
+        <br>
+        <label>Hobby</label>
+        <div>
+            <input type="checkbox" id="reading" value="reading" name="hobby">
+            <label for="reading">reading</label>
+            <input type="checkbox" id="music" value="music" name="hobby">
+            <label for="music">music</label>
+            <input type="checkbox" id="dance" value="dance" name="hobby">
+            <label for="dance">dance</label>
+            <input type="checkbox" id="sports" value="sports" name="hobby">
+            <label for="sports">sports</label>
+        </div>
+        <br>
+        <label for="comments">comments</label>
+        <div>
+            <textarea id="comments" name="comments" rows="5" cols="50"></textarea>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </center>
+</form>
+</body>
+</html>
